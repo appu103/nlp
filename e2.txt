@@ -1,0 +1,13 @@
+Regular Expressions
+
+
+import re
+
+text = "Contact me at abcd@gmail.com or call 9000022210."
+
+email = re.findall(r'[\w\.-]+@[\w\.-]+\.\w+', text)
+
+phone = re.findall(r'\b\d{10}\b', text)
+
+print("Email:", email)
+print("Phone:", phone)

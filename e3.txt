@@ -1,0 +1,18 @@
+NLG
+
+
+!pip install nltk
+
+import nltk
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+
+name = "manu"
+course = "Artificial Intelligence and Machine Learning"
+marks = 85
+
+generated_text = f"{name} is studying {course} and scored {marks} marks."
+
+print("Generated Text:")
+print(generated_text)

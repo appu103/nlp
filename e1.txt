@@ -1,0 +1,17 @@
+Morpheme
+
+words = ["unhappy", "redo", "teacher", "careless"]
+
+prefix = ["un", "re"]
+suffix = ["er", "less", "ing"]
+
+for word in words:
+    print("\nWord :", word)
+
+    for p in prefix:
+        if word.startswith(p):
+            print("Prefix :", p)
+
+    for s in suffix:
+        if word.endswith(s):
+            print("Suffix :", s)
